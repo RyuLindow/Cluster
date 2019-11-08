@@ -1,0 +1,54 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+	var aboutUs = Umbraco.ContentAtRoot().FirstOrDefault().ChildrenOfType("aboutUs").Where(x => x.IsVisible());
+	var carousel = Model.Root()?.FirstChildOfType("aboutUs")?.ChildrenOfType("aboutUsCarousel").Where(x => x.IsVisible());
+	
+}
+
+
+
+	<!-- ABOUT US -->
+	<section id="about-us">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-6">
+					<div class="about-us text-center">
+              	
+                	@foreach (var item in aboutUs)
+{					    
+					    <h4>@item.Value("aboutUsTitle")</h4>
+						<p>@item.Value("aboutUsDescription")</p>
+						<a href="@item.Value("aboutUsButtonLink")" class="btn btn-send">@item.Value("aboutUsButton")</a>
+}						
+						
+					</div>
+				</div>
+				<div class="col-sm-6 our-office">
+					<div id="office-carousel" class="carousel slide" data-ride="carousel">			
+						<div class="carousel-inner">
+						    
+				@foreach (var item in carousel) 
+{
+				var cls = carousel.First() == item ? "active" : null;
+					    
+							<div class="item @cls">
+							
+				@{
+                    var slide = item.Value<IPublishedContent>("carouselSlide");
+                    if (slide != null)
+                    {
+                    <img src="@slide.Url">
+                    }
+                }
+							</div>
+}
+							
+							<a class="office-carousel-left" href="#office-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+							<a class="office-carousel-right" href="#office-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+						</div>		
+					</div> <!--/#office-carousel--> 
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /ABOUT US -->

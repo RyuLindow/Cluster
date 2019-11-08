@@ -1,0 +1,56 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-forms-stackoverflow color-deep-orange",
+  "Thumbnail": "folder.png",
+  "Description": "Title for the section of the page",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/9a88af98b4404243b3611f9f23c7ca3b",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "622ae21a-09a1-4089-92ad-e9d2a557cb5b",
+      "Name": "Section Title",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "fcf09efd-1417-4cbe-822f-ecdea96990d0",
+          "Alias": "sectionTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter a title for a page section. E.g. pricing, our team etc.",
+          "Mandatory": false,
+          "Name": "Section Title",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/48b1901412014e14aafb892bc1b7c950",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/9a88af98b4404243b3611f9f23c7ca3b",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Section Settings",
+  "Alias": "sectionSettings",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

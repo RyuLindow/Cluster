@@ -1,0 +1,47 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+	var sectionTitle = Umbraco.ContentAtRoot().FirstOrDefault().ChildrenOfType("pricingSection").Where(x => x.IsVisible());
+	var pricing = Model.Root()?.FirstChildOfType("pricingSection")?.ChildrenOfType("pricing").Where(x => x.IsVisible());
+}
+
+		<!-- PRICING -->
+	<section id="pricing">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+            	        @foreach (var item in sectionTitle)
+{
+						<h1>@item.Value("sectionTitle")</h1>
+}
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+
+@foreach (var item in pricing)
+{
+	
+
+				<div class="col-sm-4">
+					<div class="st-pricing text-center">
+						<h5>@item.Value("pricingTitle")</h5>
+						<h3>@item.Value("pricingPrice")</h3>
+						<div class="st-border"></div>
+						<ul>
+							<li>@item.Value("pricingPerk1")</li>
+							<li>@item.Value("pricingPerk2")</li>
+							<li>@item.Value("pricingPerk3")</li>
+							<li>@item.Value("pricingPerk4")</li>
+							<li>@item.Value("pricingPerk5")</li>
+						</ul>
+						<a href="@item.Value("pricingButtonLink")" class="btn btn-send">@item.Value("pricingButtonText")</a>
+					</div>
+				</div>
+}
+				
+			</div>
+		</div>
+	</section>
+	<!-- /PRICING -->

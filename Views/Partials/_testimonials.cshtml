@@ -1,0 +1,34 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+	var slides = Model.Root()?.FirstChildOfType("testimonials")?.ChildrenOfType("testimonial").Where(x => x.IsVisible());
+}
+
+
+	<!-- TESTIMONIAL -->
+	<section id="testimonial">
+		<div class="container">
+			<div class="row">
+				<div class="overlay"></div>
+				<div class="col-md-8 col-md-offset-2 col-sm-12">
+					<div class="st-testimonials">
+					    
+                		@foreach (var item in slides) 
+                		{
+                			var cls = slides.First() == item ? "active" : null;
+
+    						<div class="item @cls text-center">
+    							<p>"@item.Value("testimonialText")"</p>
+    							<div class="st-border"></div>
+    							<div class="client-info">
+    								<h5>@item.Value("testimonialName")</h5>
+    								<span>@item.Value("testimonialTitle")</span>
+    							</div>
+    						</div>
+                        }
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- /TESTIMONIAL -->

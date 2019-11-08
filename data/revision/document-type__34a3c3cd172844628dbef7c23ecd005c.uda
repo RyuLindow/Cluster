@@ -1,0 +1,38 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-smiley-inverted color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "Container for Fun Facts",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/652ec386b2854e40a4e3e4524a9732b8"
+    ]
+  },
+  "Parent": "umb://document-type-container/36c131f222ff4f018d1b2894f91fe5e7",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/34a3c3cd172844628dbef7c23ecd005c",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/652ec386b2854e40a4e3e4524a9732b8",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/36c131f222ff4f018d1b2894f91fe5e7",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Fun Facts section",
+  "Alias": "funFacts",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

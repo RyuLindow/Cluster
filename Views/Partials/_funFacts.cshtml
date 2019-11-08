@@ -1,0 +1,25 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+	var facts = Model.Root()?.FirstChildOfType("funFacts")?.ChildrenOfType("funFact").Where(x => x.IsVisible());
+}
+
+	<!-- FUN FACTS -->
+	<section id="fun-facts">
+		<div class="container">
+			<div class="row">
+			    
+			@foreach (var item in facts) 
+{
+				<div class="col-sm-6 col-md-3">
+					<div class="fun-fact text-center">
+						<h3><i class="fa @item.Value("funFactIcon")"></i> <span class="st-counter">@item.Value("funFactAmount")</span></h3>
+						<p>@item.Value("funFactName")</p>
+					</div>
+				</div>
+}
+            
+			</div>
+		</div>
+	</section>
+	<!-- /FUN FACTS -->

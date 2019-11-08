@@ -1,0 +1,45 @@
+{
+  "DefaultTemplate": "umb://template/d405ffd689244834b70232859cc15e66",
+  "AllowedTemplates": [
+    "umb://template/d405ffd689244834b70232859cc15e66"
+  ],
+  "Icon": "icon-thought-bubble color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "Container for Testimonials",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/0cd796cdff654a97894e88293e90ed97"
+    ]
+  },
+  "Parent": "umb://document-type-container/7cf49692564b4df3937d4f247e4cb02c",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/ce48fb432f544d6b9febf57f32ebdfad",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/0cd796cdff654a97894e88293e90ed97",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/7cf49692564b4df3937d4f247e4cb02c",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d405ffd689244834b70232859cc15e66",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Testimonials section",
+  "Alias": "testimonials",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

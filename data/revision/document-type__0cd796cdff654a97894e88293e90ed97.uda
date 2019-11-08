@@ -1,0 +1,109 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-thought-bubble color-deep-orange",
+  "Thumbnail": "folder.png",
+  "Description": "Name, Title, Testimonial text and a Background image",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/7cf49692564b4df3937d4f247e4cb02c",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "69e18e69-5839-4420-a3b9-dffde7bb70e7",
+      "Name": "Testimonial",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "079beea9-3aa5-4cf8-8b85-de1b11a91458",
+          "Alias": "testimonialName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter the name of the person who provided the testimonial",
+          "Mandatory": false,
+          "Name": "Testimonial Name",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "485e72fc-3818-4e9d-8cb1-d94384e79f03",
+          "Alias": "testimonialTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter the title of the person who provided the testimonial",
+          "Mandatory": false,
+          "Name": "Testimonial Title",
+          "SortOrder": 1,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "9207dc69-a723-46b1-993c-590605aedf3f",
+          "Alias": "testimonialText",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Enter the testimonial text",
+          "Mandatory": false,
+          "Name": "Testimonial Text",
+          "SortOrder": 2,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    },
+    {
+      "Key": "f0bb3ab6-720f-40cd-8166-19020956bd21",
+      "Name": "Testimonials Background",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "b0517af0-3abb-44ac-8f16-f2b0dd4f4cc5",
+          "Alias": "testimonialsBackgroundImage",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "Add a testimonials background image",
+          "Mandatory": false,
+          "Name": "Testimonials Background Image",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/0cd796cdff654a97894e88293e90ed97",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/7cf49692564b4df3937d4f247e4cb02c",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Testimonial",
+  "Alias": "testimonial",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

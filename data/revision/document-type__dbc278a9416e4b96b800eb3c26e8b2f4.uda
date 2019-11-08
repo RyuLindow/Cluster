@@ -1,0 +1,45 @@
+{
+  "DefaultTemplate": "umb://template/d405ffd689244834b70232859cc15e66",
+  "AllowedTemplates": [
+    "umb://template/d405ffd689244834b70232859cc15e66"
+  ],
+  "Icon": "icon-slideshow color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "Container for slides",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/18fcae28a5694161a02827715393c8c5"
+    ]
+  },
+  "Parent": "umb://document-type-container/dd816a5c88aa49a7966733fda2f66673",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/dbc278a9416e4b96b800eb3c26e8b2f4",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/18fcae28a5694161a02827715393c8c5",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/dd816a5c88aa49a7966733fda2f66673",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d405ffd689244834b70232859cc15e66",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Slider section",
+  "Alias": "slider",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

@@ -1,0 +1,193 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-meeting color-deep-orange",
+  "Thumbnail": "folder.png",
+  "Description": "Name, Title, Image and Social Media links",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/32e8d765cbbc431ab23dc9ee541e28ae",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "89704f7b-3c58-4a33-b4aa-cc1cb1624c2a",
+      "Name": "Our Team Member Info",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "1a23f505-213d-437c-887b-f1e257f37888",
+          "Alias": "teamMemberName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter a name of a team member",
+          "Mandatory": false,
+          "Name": "Team Member Name",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "2505c920-3ce1-49fa-b5aa-962de59c36f9",
+          "Alias": "teamMemberTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter a tile of a team member",
+          "Mandatory": false,
+          "Name": "Team Member Title",
+          "SortOrder": 1,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "fada733a-fa98-4596-9137-9df6fb0a91e5",
+          "Alias": "teamMemberImage",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "Add an image of a team member",
+          "Mandatory": false,
+          "Name": "Team Member Image",
+          "SortOrder": 2,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    },
+    {
+      "Key": "e2c7e844-b336-4902-89c8-79ab28f49c73",
+      "Name": "Our Team Social Media",
+      "SortOrder": 2,
+      "PropertyTypes": [
+        {
+          "Key": "13f98038-b6d3-4e8e-87ca-d29db84cea9e",
+          "Alias": "facebookIcon",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Add a Font Awesome icon",
+          "Mandatory": false,
+          "Name": "Facebook Icon",
+          "SortOrder": 4,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "142982ed-363e-44f4-8022-62872b4dad6b",
+          "Alias": "twitterIcon",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Add a Font Awesome icon",
+          "Mandatory": false,
+          "Name": "Twitter Icon",
+          "SortOrder": 5,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "221bef9f-c6cc-4837-883a-3e79e8a2f042",
+          "Alias": "teamMemberTwitterLink",
+          "DataType": "umb://data-type/ba6977375ab34249ba9fff36c2942da6",
+          "Description": "Add a link to team members Twitter",
+          "Mandatory": false,
+          "Name": "Team Member Twitter Link",
+          "SortOrder": 1,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "60de18e2-bde4-4742-be18-f895a84f36da",
+          "Alias": "teamMemberFacebookLink",
+          "DataType": "umb://data-type/ba6977375ab34249ba9fff36c2942da6",
+          "Description": "Add a link to team members Facebook",
+          "Mandatory": false,
+          "Name": "Team Member Facebook Link",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "7ef15cbf-dc17-49d2-837f-877aff614d62",
+          "Alias": "linkedInIcon",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Add a Font Awesome icon",
+          "Mandatory": false,
+          "Name": "LinkedIn Icon",
+          "SortOrder": 7,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "8acad9af-5eea-46fb-8ae4-aaab0147a693",
+          "Alias": "googleIcon",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Add a Font Awesome icon",
+          "Mandatory": false,
+          "Name": "Google+ Icon",
+          "SortOrder": 6,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "9253f548-981f-4482-8bf1-f15be220663a",
+          "Alias": "teamMemberLinkedInLink",
+          "DataType": "umb://data-type/ba6977375ab34249ba9fff36c2942da6",
+          "Description": "Add a link to team members LinkedIn",
+          "Mandatory": false,
+          "Name": "Team Member LinkedIn Link",
+          "SortOrder": 3,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "fe91a394-7f80-4d30-862a-bb2e5099fa5c",
+          "Alias": "teamMemberGoogleLink",
+          "DataType": "umb://data-type/ba6977375ab34249ba9fff36c2942da6",
+          "Description": "Add a link to team members Google+",
+          "Mandatory": false,
+          "Name": "Team Member Google+ Link",
+          "SortOrder": 2,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/da86cd8714db40ed9056fc7f968dcb7e",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ba6977375ab34249ba9fff36c2942da6",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/32e8d765cbbc431ab23dc9ee541e28ae",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Our Team",
+  "Alias": "ourTeam",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

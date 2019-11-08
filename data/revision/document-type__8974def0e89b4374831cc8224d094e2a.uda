@@ -1,0 +1,45 @@
+{
+  "DefaultTemplate": "umb://template/d405ffd689244834b70232859cc15e66",
+  "AllowedTemplates": [
+    "umb://template/d405ffd689244834b70232859cc15e66"
+  ],
+  "Icon": "icon-footprints color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "Current year, Company name, All Rights Reserved text, SoMe nudge text",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+  "CompositionContentTypes": [
+    "umb://document-type/444a599a955f40009881a9f3b07e2a40"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/8974def0e89b4374831cc8224d094e2a",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/444a599a955f40009881a9f3b07e2a40",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d405ffd689244834b70232859cc15e66",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Footer",
+  "Alias": "footer",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

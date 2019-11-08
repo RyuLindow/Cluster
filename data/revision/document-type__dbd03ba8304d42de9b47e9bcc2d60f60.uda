@@ -1,0 +1,52 @@
+{
+  "DefaultTemplate": "umb://template/d405ffd689244834b70232859cc15e66",
+  "AllowedTemplates": [
+    "umb://template/d405ffd689244834b70232859cc15e66"
+  ],
+  "Icon": "icon-coins-dollar-alt color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "Container for Pricing",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/ec98922f3ed64fd6aee997689e34b87e"
+    ]
+  },
+  "Parent": "umb://document-type-container/199245dc88774bc58366749a843c1d52",
+  "CompositionContentTypes": [
+    "umb://document-type/48b1901412014e14aafb892bc1b7c950"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/dbd03ba8304d42de9b47e9bcc2d60f60",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/48b1901412014e14aafb892bc1b7c950",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/ec98922f3ed64fd6aee997689e34b87e",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/199245dc88774bc58366749a843c1d52",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d405ffd689244834b70232859cc15e66",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Pricing section",
+  "Alias": "pricingSection",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

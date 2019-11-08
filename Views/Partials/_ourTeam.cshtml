@@ -1,0 +1,50 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+	var sectionTitle = Umbraco.ContentAtRoot().FirstOrDefault().ChildrenOfType("ourTeamSection").Where(x => x.IsVisible());
+	var teamMember = Model.Root()?.FirstChildOfType("ourTeamSection")?.ChildrenOfType("ourTeam").Where(x => x.IsVisible());
+}
+
+
+		<!-- OUR TEAM -->
+	<section id="our-team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="section-title">
+            	        @foreach (var item in sectionTitle)
+{
+						<h1>@item.Value("sectionTitle")</h1>
+}
+						<span class="st-border"></span>
+					</div>
+				</div>
+
+
+ @foreach (var item in teamMember)
+{
+				<div class="col-md-3 col-sm-6">
+					<div class="team-member">
+						<div class="member-image">
+							<img class="img-responsive" src="@item.Value("teamMemberImage")" alt="">
+							<div class="member-social">
+								<a href="@item.Value("teamMemberFacebookLink")"><i class="fa @item.Value("facebookIcon")"></i></a>
+								<a href="@item.Value("teamMemberTwitterLink")"><i class="fa @item.Value("twitterIcon")"></i></a>
+								<a href="@item.Value("teamMemberGoogleLink")"><i class="fa @item.Value("googleIcon")"></i></a>
+								<a href="@item.Value("teamMemberLinkedInLink")"><i class="fa @item.Value("linkedInIcon")"></i></a>
+							</div>
+						</div>
+						<div class="member-info">
+							<h4>@item.Value("teamMemberName")</h4>
+							<span>@item.Value("teamMemberTitle")</span>
+						</div>
+					</div>
+				</div>
+}
+
+
+
+			</div>
+		</div>
+	</section>
+	<!-- /OUR TEAM -->

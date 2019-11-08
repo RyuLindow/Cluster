@@ -1,0 +1,51 @@
+{
+  "DefaultTemplate": "umb://template/d405ffd689244834b70232859cc15e66",
+  "AllowedTemplates": [
+    "umb://template/d405ffd689244834b70232859cc15e66"
+  ],
+  "Icon": "icon-phone color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "Section name, Description, Address, Phone number, Email, Domain name",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+  "CompositionContentTypes": [
+    "umb://document-type/48b1901412014e14aafb892bc1b7c950",
+    "umb://document-type/6d4e7849c68c4bca87df840715c8bbc1"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/168dd967bc7947d68c5e3b94311c1454",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/48b1901412014e14aafb892bc1b7c950",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/6d4e7849c68c4bca87df840715c8bbc1",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d405ffd689244834b70232859cc15e66",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Contact",
+  "Alias": "contact",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

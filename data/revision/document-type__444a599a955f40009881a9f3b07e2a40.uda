@@ -1,0 +1,99 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-forms-stackoverflow color-deep-orange",
+  "Thumbnail": "folder.png",
+  "Description": "Current year, Company name, All Rights Reserved text, SoMe nudge text",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/9a88af98b4404243b3611f9f23c7ca3b",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "e1216ad9-929a-40ab-baea-66fe8e7f9e9a",
+      "Name": "Copyright",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "51b7a2d2-9df5-41d5-8a41-e4689fc7af9d",
+          "Alias": "allRightsReservedText",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Overwrite standard \"All Rights Reserved\" text",
+          "Mandatory": false,
+          "Name": "All Rights Reserved text",
+          "SortOrder": 2,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "6913ba2e-0e48-4791-8459-64799a6f2d01",
+          "Alias": "companyName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Overwrite standard Company Name",
+          "Mandatory": false,
+          "Name": "Company Name",
+          "SortOrder": 1,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "84eed9d1-3756-4a5f-a709-e69260527993",
+          "Alias": "currentYear",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Overwrite Current Year number shown next to the © symbol",
+          "Mandatory": false,
+          "Name": "Current Year",
+          "SortOrder": 0,
+          "Validation": "^[0-9]*$",
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    },
+    {
+      "Key": "f423df22-5f62-4347-b3d2-7b6c8170423f",
+      "Name": "SoMe",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "608e3e26-108e-4f81-a1fe-1e411e8b557f",
+          "Alias": "soMeTextFooter",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter a Call to Action text that will be shown next to Social Media icons",
+          "Mandatory": false,
+          "Name": "SoMe text footer",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/444a599a955f40009881a9f3b07e2a40",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/9a88af98b4404243b3611f9f23c7ca3b",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Footer Settings",
+  "Alias": "footerSettings",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

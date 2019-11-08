@@ -1,0 +1,133 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-company color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "Title, Description, Button and Button Link + Section container",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/485e9389e3674e3bb59078bbd35116bf"
+    ]
+  },
+  "Parent": "umb://document-type-container/7ba94e31312341b9a6b7a8474ee2a649",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "9e0645c0-3f09-4e70-b03e-812c496cc4be",
+      "Name": "About Us Carousel",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "a763ae6b-7829-4ab3-ac92-1b1c2e2ea85a",
+          "Alias": "aboutUsImage",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "Add an image to the carousel",
+          "Mandatory": false,
+          "Name": "About Us Image",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    },
+    {
+      "Key": "c3bde1f9-0fe2-4818-963a-da7635d40168",
+      "Name": "About Us",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "10f6966f-111f-4168-bebb-32a113129363",
+          "Alias": "aboutUsTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter a title",
+          "Mandatory": false,
+          "Name": "About Us Title",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "3fe7620f-7857-4a64-86fa-ac7816906680",
+          "Alias": "aboutUsButtonLink",
+          "DataType": "umb://data-type/ba6977375ab34249ba9fff36c2942da6",
+          "Description": "Enter a link for the button",
+          "Mandatory": false,
+          "Name": "About Us Button Link",
+          "SortOrder": 3,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "9a088f33-777f-468b-8a31-0f68f9ba496c",
+          "Alias": "aboutUsButton",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter a text for the button",
+          "Mandatory": false,
+          "Name": "About Us Button",
+          "SortOrder": 2,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "c3d3e1dd-6d27-4fca-8976-018093164d8e",
+          "Alias": "aboutUsDescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Enter a description",
+          "Mandatory": false,
+          "Name": "About Us Description",
+          "SortOrder": 1,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/b0442e334f9d4aa49b020f56efbfdb77",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ba6977375ab34249ba9fff36c2942da6",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/485e9389e3674e3bb59078bbd35116bf",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/7ba94e31312341b9a6b7a8474ee2a649",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "About Us section",
+  "Alias": "aboutUs",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

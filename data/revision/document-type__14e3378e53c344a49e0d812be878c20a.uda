@@ -1,0 +1,106 @@
+{
+  "DefaultTemplate": "umb://template/d405ffd689244834b70232859cc15e66",
+  "AllowedTemplates": [
+    "umb://template/d405ffd689244834b70232859cc15e66"
+  ],
+  "Icon": "icon-home color-deep-purple",
+  "Thumbnail": "folder.png",
+  "Description": "SEO Title, Description and a Favicon",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": true,
+    "IsElementType": false,
+    "AllowedChildContentTypes": [
+      "umb://document-type/05ef23a40cb04200a22f21bd7c3a4190",
+      "umb://document-type/168dd967bc7947d68c5e3b94311c1454",
+      "umb://document-type/34a3c3cd172844628dbef7c23ecd005c",
+      "umb://document-type/5387a86f3ad7485987080231aabde6de",
+      "umb://document-type/8974def0e89b4374831cc8224d094e2a",
+      "umb://document-type/b0442e334f9d4aa49b020f56efbfdb77",
+      "umb://document-type/cdf613f243f8469ebb81831c34d349e2",
+      "umb://document-type/ce48fb432f544d6b9febf57f32ebdfad",
+      "umb://document-type/dbc278a9416e4b96b800eb3c26e8b2f4",
+      "umb://document-type/dbd03ba8304d42de9b47e9bcc2d60f60"
+    ]
+  },
+  "Parent": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+  "CompositionContentTypes": [
+    "umb://document-type/db76d25473ea40a78542f113f8c20bd4"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/14e3378e53c344a49e0d812be878c20a",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type/05ef23a40cb04200a22f21bd7c3a4190",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/168dd967bc7947d68c5e3b94311c1454",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/34a3c3cd172844628dbef7c23ecd005c",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/5387a86f3ad7485987080231aabde6de",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/8974def0e89b4374831cc8224d094e2a",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/b0442e334f9d4aa49b020f56efbfdb77",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/cdf613f243f8469ebb81831c34d349e2",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/ce48fb432f544d6b9febf57f32ebdfad",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/db76d25473ea40a78542f113f8c20bd4",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/dbc278a9416e4b96b800eb3c26e8b2f4",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/dbd03ba8304d42de9b47e9bcc2d60f60",
+      "Ordering": false,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d405ffd689244834b70232859cc15e66",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Page Settings",
+  "Alias": "home",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

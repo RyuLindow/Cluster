@@ -1,0 +1,33 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@{
+	var slides = Model.Root()?.FirstChildOfType("slider")?.ChildrenOfType("slide").Where(x => x.IsVisible());
+}
+
+<!-- SLIDER -->
+<section id="slider">
+	<div id="home-carousel" class="carousel slide" data-ride="carousel">			
+		<div class="carousel-inner">
+			@foreach (var item in slides) 
+			{
+				var cls = slides.First() == item ? "active" : null;
+				
+				<div class="item @cls" style="background-image: url(media/slider/01.jpg)">
+					<div class="carousel-caption container">
+						<div class="row">
+							<div class="col-sm-7">
+								<h1>@item.Value("topTitle") </h1>
+								<h2>@item.Value("bottomTitle")</h2>
+								<p>@item.Value("slideDescription")</p>
+							</div>
+						</div>
+					</div>					
+				</div>
+			}
+		
+			<a class="home-carousel-left" href="#home-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+			<a class="home-carousel-right" href="#home-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+		</div>		
+	</div> <!--/#home-carousel--> 
+</section>
+<!-- /SLIDER -->

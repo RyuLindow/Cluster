@@ -1,0 +1,63 @@
+{
+  "DefaultTemplate": "umb://template/d405ffd689244834b70232859cc15e66",
+  "AllowedTemplates": [
+    "umb://template/d405ffd689244834b70232859cc15e66"
+  ],
+  "Icon": "icon-company color-deep-orange",
+  "Thumbnail": "folder.png",
+  "Description": "Image carousel",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/7ba94e31312341b9a6b7a8474ee2a649",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "c79a4a57-a864-4910-8cd1-b9550bf55846",
+      "Name": "Slide",
+      "SortOrder": 0,
+      "PropertyTypes": [
+        {
+          "Key": "f8aeeb2b-f0fb-468a-86e6-ea2cad11ffe9",
+          "Alias": "carouselSlide",
+          "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+          "Description": "Add a slide to the carousel",
+          "Mandatory": false,
+          "Name": "Carousel Slide",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/485e9389e3674e3bb59078bbd35116bf",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/7ba94e31312341b9a6b7a8474ee2a649",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/d405ffd689244834b70232859cc15e66",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "About Us carousel",
+  "Alias": "aboutUsCarousel",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

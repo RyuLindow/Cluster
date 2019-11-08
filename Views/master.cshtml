@@ -1,0 +1,82 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+
+@using ClientDependency.Core.Mvc
+@{
+    Layout = null;
+}
+
+@* the fun starts here *@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    	<!-- Main CSS file -->
+	<link rel="stylesheet" href="/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="/css/owl.carousel.css" />
+	<link rel="stylesheet" href="/css/magnific-popup.css" />
+	<link rel="stylesheet" href="/css/font-awesome.css" />
+	<link rel="stylesheet" href="/css/style.css" />
+	<link rel="stylesheet" href="/css/responsive.css" />
+    
+    <meta charset="UTF-8">
+
+    <title>@Model.Value("seoTitle")</title>
+    <meta name="description" content=@Model.Value("seoDescription")>
+
+    <!-- Favicon -->
+@Model.Value("favicon", fallback: Fallback.ToAncestors)
+
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Media/icon/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Media/icon/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Media/icon/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/Media/icon/apple-touch-icon-57-precomposed.png">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</header>
+<body>
+ 
+@RenderBody()
+
+<!-- Partials -->
+@Html.Partial("_headerNavBar")
+@Html.Partial("_slider")
+@Html.Partial("_services")
+@Html.Partial("_ourWorks")
+@Html.Partial("_pricing")
+@Html.Partial("_ourTeam")
+@Html.Partial("_aboutUs")
+@Html.Partial("_testimonials")
+@Html.Partial("_funFacts")
+@Html.Partial("_contact")
+@Html.Partial("_footer")
+
+    <!-- Scroll-up -->
+    <div class="scroll-up">
+        <ul><li><a href="#header"><i class="fa fa-angle-up"></i></a></li></ul>
+    </div>
+
+
+
+	<!-- JS -->
+	<script type="text/javascript" src="/scripts/jquery.min.js"></script><!-- jQuery -->
+	<script type="text/javascript" src="/scripts/bootstrap.min.js"></script><!-- Bootstrap -->
+	<script type="text/javascript" src="/scripts/jquery.parallax.js"></script><!-- Parallax -->
+	<script type="text/javascript" src="/scripts/smoothscroll.js"></script><!-- Smooth Scroll -->
+	<script type="text/javascript" src="/scripts/masonry.pkgd.min.js"></script><!-- masonry -->
+	<script type="text/javascript" src="/scripts/jquery.fitvids.js"></script><!-- fitvids -->
+	<script type="text/javascript" src="/scripts/owl.carousel.min.js"></script><!-- Owl-Carousel -->
+	<script type="text/javascript" src="/scripts/jquery.counterup.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="/scripts/waypoints.min.js"></script><!-- CounterUp -->
+	<script type="text/javascript" src="/scripts/jquery.isotope.min.js"></script><!-- isotope -->
+	<script type="text/javascript" src="/scripts/jquery.magnific-popup.min.js"></script><!-- magnific-popup -->
+	<script type="text/javascript" src="/scripts/scripts.js"></script><!-- Scripts -->
+
+</body>
+</html>

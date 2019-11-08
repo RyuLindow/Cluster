@@ -1,0 +1,109 @@
+{
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
+  "Icon": "icon-forms-stackoverflow color-deep-orange",
+  "Thumbnail": "folder.png",
+  "Description": "Description, Address, Phone number, Email, Domain name",
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/9a88af98b4404243b3611f9f23c7ca3b",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [
+    {
+      "Key": "7b6dca28-4707-419a-a973-195e4f8d870b",
+      "Name": "Company's Contact Info",
+      "SortOrder": 1,
+      "PropertyTypes": [
+        {
+          "Key": "2c018cc4-32e7-4a6c-96b1-a9181e60f1d2",
+          "Alias": "contactDescription",
+          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+          "Description": "Enter a description that will be shown above contact info",
+          "Mandatory": false,
+          "Name": "Contact Description",
+          "SortOrder": 0,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "6183d086-734b-48e2-bf79-d7a817713c11",
+          "Alias": "companyEmail",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter the company's Email",
+          "Mandatory": false,
+          "Name": "Company Email",
+          "SortOrder": 3,
+          "Validation": "[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+",
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "69639ec3-fad8-4795-87c2-5dfa8e9bb269",
+          "Alias": "companyDomain",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter the company's Domain address",
+          "Mandatory": false,
+          "Name": "Company Domain Address",
+          "SortOrder": 4,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "bc9a563e-bcee-4bd4-a64c-86699f1355f8",
+          "Alias": "companyAddress",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter the company's address",
+          "Mandatory": false,
+          "Name": "Company Address",
+          "SortOrder": 1,
+          "Validation": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        },
+        {
+          "Key": "f5f85f92-d00d-417e-b273-8a83f051b61f",
+          "Alias": "companyPhoneNumber",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": "Enter the company's phone number - only numbers and spaces are allowed",
+          "Mandatory": false,
+          "Name": "Company Phone Number",
+          "SortOrder": 2,
+          "Validation": "^[0-9 ]*$",
+          "VariesByCulture": false,
+          "VariesBySegment": false
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/6d4e7849c68c4bca87df840715c8bbc1",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type-container/9a88af98b4404243b3611f9f23c7ca3b",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "Name": "Contact Settings",
+  "Alias": "contactSettings",
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "3.1.5"
+}

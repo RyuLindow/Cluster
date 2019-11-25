@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.DropDown.Flexible",
+  "DatabaseType": 1,
+  "Configuration": {"multiple":true,"items":[{"id":1,"value":"WordPress"},{"id":2,"value":"HTML"},{"id":3,"value":"Graphics"},{"id":4,"value":"PHP"},{"id":5,"value":"Bootstrap"}]},
+  "Parent": null,
+  "Udi": "umb://data-type/0b6a45e744ba430d9da54e46060b9e03",
+  "Dependencies": [],
+  "Name": "Tags list",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "3.1.5"
+}

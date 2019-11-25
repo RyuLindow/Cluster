@@ -100,7 +100,7 @@
     }
   ],
   "Name": "Page Settings",
-  "Alias": "home",
+  "Alias": "pageSettings",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
   "__version": "3.1.5"
 }

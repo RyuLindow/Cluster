@@ -1,9 +1,7 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 
 @{
-	var contact = Umbraco.ContentAtRoot().FirstOrDefault()
-    .ChildrenOfType("contact")
-    .Where(x => x.IsVisible());
+	var contact = Umbraco.ContentAtRoot().FirstOrDefault().ChildrenOfType("contact").Where(x => x.IsVisible());
 }
 
     <!-- CONTACT -->

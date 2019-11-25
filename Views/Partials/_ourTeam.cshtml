@@ -5,8 +5,7 @@
 	var teamMember = Model.Root()?.FirstChildOfType("ourTeamSection")?.ChildrenOfType("ourTeam").Where(x => x.IsVisible());
 }
 
-
-		<!-- OUR TEAM -->
+	<!-- OUR TEAM -->
 	<section id="our-team">
 		<div class="container">
 			<div class="row">
@@ -26,7 +25,13 @@
 				<div class="col-md-3 col-sm-6">
 					<div class="team-member">
 						<div class="member-image">
-							<img class="img-responsive" src="@item.Value("teamMemberImage")" alt="">
+    		    				@{
+                                    var teamMemberImage = item.Value<IPublishedContent>("teamMemberImage");
+                                    if (teamMemberImage != null)
+                                    {
+        							    <img class="img-responsive" src="@teamMemberImage.Url" alt="">
+                                    }
+                                }
 							<div class="member-social">
 								<a href="@item.Value("teamMemberFacebookLink")"><i class="fa @item.Value("facebookIcon")"></i></a>
 								<a href="@item.Value("teamMemberTwitterLink")"><i class="fa @item.Value("twitterIcon")"></i></a>

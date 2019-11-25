@@ -65,11 +65,11 @@
       "PropertyTypes": [
         {
           "Key": "b0517af0-3abb-44ac-8f16-f2b0dd4f4cc5",
-          "Alias": "testimonialsBackgroundImage",
+          "Alias": "backgroundImage",
           "DataType": "umb://data-type/135d60e064d949edab08893c9ba44ae5",
           "Description": "Add a testimonials background image",
           "Mandatory": false,
-          "Name": "Testimonials Background Image",
+          "Name": "Background Image",
           "SortOrder": 0,
           "Validation": null,
           "VariesByCulture": false,

@@ -12,11 +12,12 @@
     "AllowVaryingBySegment": false,
     "AllowedAtRoot": false,
     "IsElementType": false,
-    "AllowedChildContentTypes": []
+    "AllowedChildContentTypes": [
+      "umb://document-type/4692dc37c33b425497e5a3bb50c9d9f7"
+    ]
   },
-  "Parent": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+  "Parent": "umb://document-type-container/cd33299213e54e46ba1e2ac3102f6ee8",
   "CompositionContentTypes": [
-    "umb://document-type/4692dc37c33b425497e5a3bb50c9d9f7",
     "umb://document-type/48b1901412014e14aafb892bc1b7c950"
   ],
   "PropertyGroups": [],
@@ -25,7 +26,7 @@
   "Dependencies": [
     {
       "Udi": "umb://document-type/4692dc37c33b425497e5a3bb50c9d9f7",
-      "Ordering": true,
+      "Ordering": false,
       "Mode": 0
     },
     {
@@ -34,7 +35,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type-container/3476602f52fd4303a5169a5b3c77f08d",
+      "Udi": "umb://document-type-container/cd33299213e54e46ba1e2ac3102f6ee8",
       "Ordering": true,
       "Mode": 0
     },
@@ -44,8 +45,8 @@
       "Mode": 0
     }
   ],
-  "Name": "Our Works",
-  "Alias": "ourWorks",
+  "Name": "Our Works section",
+  "Alias": "ourWorksSection",
   "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.ContentType.DocumentTypeArtifact",
   "__version": "3.1.5"
 }

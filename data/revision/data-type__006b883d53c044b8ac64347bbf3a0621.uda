@@ -1,0 +1,12 @@
+{
+  "EditorAlias": "Umbraco.DropDown.Flexible",
+  "DatabaseType": 1,
+  "Configuration": {"multiple":true,"items":[{"id":1,"value":"WordPress"},{"id":2,"value":"HTML"},{"id":3,"value":"Graphic"},{"id":4,"value":"PHP"},{"id":5,"value":"Bootstrap"}]},
+  "Parent": null,
+  "Udi": "umb://data-type/006b883d53c044b8ac64347bbf3a0621",
+  "Dependencies": [],
+  "Name": "Our Works section - Dropdown",
+  "Alias": null,
+  "__type": "Umbraco.Deploy,Umbraco.Deploy.Artifacts.DataTypeArtifact",
+  "__version": "3.1.5"
+}

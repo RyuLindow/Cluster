@@ -1,7 +1,8 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 
 @{
-	var sectionTitle = Umbraco.ContentAtRoot().FirstOrDefault().ChildrenOfType("ourWorks").Where(x => x.IsVisible());
+	var sectionTitle = Umbraco.ContentAtRoot().FirstOrDefault().ChildrenOfType("ourWorksSection").Where(x => x.IsVisible());
+    var portfolioItem = Model.Root()?.FirstChildOfType("ourWorksSection")?.ChildrenOfType("ourWorks").Where(x => x.IsVisible());
 }
 
 	<!-- OUR WORKS -->
@@ -24,80 +25,37 @@
 							<li><a class="active" href="#" data-filter="*">All</a></li>	
 							<li><a href="#" data-filter=".wordpress">WordPress</a></li>
 							<li><a href="#" data-filter=".html">HTML</a></li>
-							<li><a href="#" data-filter=".graphic">graphic</a></li>
+							<li><a href="#" data-filter=".graphic">Graphic</a></li>
 							<li><a href="#" data-filter=".php">PHP</a></li>
-							<li><a href="#" data-filter=".bootstrap">bootstrap</a></li>
+							<li><a href="#" data-filter=".bootstrap">Bootstrap</a></li>
 						</ul><!--/#portfolio-filter-->
 					</div>
 					
 					<div class="portfolio-items">
-						
-						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
+					    
+					    @foreach (var item in portfolioItem)
+{
+					    
+						<div class="col-md-4 col-sm-6 work-grid @item.Value("tags")">
 							<div class="portfolio-content">
-								<img class="img-responsive" src="/Media/works/portfolio-1.jpg" alt="">
+    		    				@{
+                                    var portfolioImage = item.Value<IPublishedContent>("image");
+                                    if (portfolioImage != null)
+                                    {
+								        <img class="img-responsive" src="@portfolioImage.Url" alt="">
+                                    }
+                                }
+
+								
+								
 								<div class="portfolio-overlay">
-									<a href="/media/works/portfolio-1.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
+									<a href="/media/works/portfolio-1.jpg"><i class="fa @item.Value("icon")"></i></a>
+									<h5>@item.Value("imageTitle")</h5>
+									<p>@item.Value("description")</p>
 								</div>
 							</div>	
 						</div>
-						
-						<div class="col-md-4 col-sm-6 work-grid html php bootstrap">
-							<div class="portfolio-content">
-								<img class="img-responsive" src="/media/works/portfolio-2.jpg" alt="">
-								<div class="portfolio-overlay">
-									<a href="/media/works/portfolio-2.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
-								</div>
-							</div>	
-						</div>
-						
-						<div class="col-md-4 col-sm-6 work-grid wordpress graphic">
-							<div class="portfolio-content">
-								<img class="img-responsive" src="/media/works/portfolio-3.jpg" alt="">
-								<div class="portfolio-overlay">
-									<a href="/media/works/portfolio-3.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
-								</div>
-							</div>	
-						</div>
-						
-						<div class="col-md-4 col-sm-6 work-grid html php bootstrap">
-							<div class="portfolio-content">
-								<img class="img-responsive" src="/media/works/portfolio-4.jpg" alt="">
-								<div class="portfolio-overlay">
-									<a href="/media/works/portfolio-4.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
-								</div>
-							</div>	
-						</div>
-						
-						<div class="col-md-4 col-sm-6 work-grid wordpress graphic php">
-							<div class="portfolio-content">
-								<img class="img-responsive" src="/media/works/portfolio-5.jpg" alt="">
-								<div class="portfolio-overlay">
-									<a href="/media/works/portfolio-5.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
-								</div>
-							</div>	
-						</div>
-						
-						<div class="col-md-4 col-sm-6 work-grid html bootstrap graphic">
-							<div class="portfolio-content">
-								<img class="img-responsive" src="/media/works/portfolio-6.jpg" alt="">
-								<div class="portfolio-overlay">
-									<a href="/media/works/portfolio-6.jpg"><i class="fa fa-camera-retro"></i></a>
-									<h5>Web Development</h5>
-									<p>Design, Develop</p>
-								</div>
-							</div>	
-						</div>
-						
+}				
 					</div>				
 				</div>
 
